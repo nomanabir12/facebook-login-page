@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2F5;
+    color: #1C1E21;
+}
+
+main {
+    height:  70vh;
+    width: 80vw;
+    position: relative;
+    margin: 0 auto;
+}
+
+footer {
+    height: 130vh;
+    background-color: #ffffff;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

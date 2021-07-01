@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    height:  70vh;
+    height: 70vh;
     width: 80vw;
     position: relative;
     margin: 0 auto;
@@ -22,36 +22,36 @@ footer {
 }
 .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
     align-items: center;
-    max-width: 1000px;
+    max-width: 100px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 10%;
     transform: (-50%, -50%);
 }
 .col-logo {
-    flex: 0 0 80%;
-    text-align: left;
-    position: fixed;
-    left: 30px;
-    top:140px;
+    display: flex;
+    flex-direction: column;
 }
 .col-form {
     flex: 0 0 40%;
     text-align: center;
+    padding-left: 250px;
+    margin-bottom: 5px;
 }
 .col-logo img {
-    max-width: 300px;
+    max-width: 400px;
+    margin-top: 30px;
 
 }
 .col-logo h2 {
     font: 20px;
     font-weight: 300;
-    padding: 0 24px;
+    padding: 20px 24px;
     line-height: 26px;
     font-weight: bold;
-
+    margin-bottom: 100%;
 }
 
 .col-form .form-container {
@@ -70,6 +70,7 @@ footer {
     height: 45px;
     vertical-align: middle;
     font-size: 16px;
+
 }
 .col-form .form-container input {
     border: 1 px solid #010e20;
@@ -85,9 +86,10 @@ footer {
     background-color: #1877f2;
     border: none;
     border-radius: 6px;
+    width: 100%;
     font-size: 20px;
     padding: 0 16px;
-    color: #ffffff;
+    color:white;
     font-weight: 700;
 }
 .col-form .form-container a {
@@ -111,4 +113,67 @@ footer {
     color: #ffffff;
     font-weight: 700;
     margin-top: 20px;
+}
+.col-form p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.col-form p a {
+    text-decoration: none;
+    color: #1c1e21;
+    font-weight: 600;
+}
+
+.col-form p a:hover {
+    text-decoration: underline;
+}
+
+.footer-contents {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+footer ol:first-child {
+    border-bottom: 1px solid #dddfe2;
+    padding: 10px 10px;
+}
+
+footer ol:first-child li:last-child button {
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    outline: none;
+    color: #4b4f56;
+    padding-left: 30px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+footer ol li {
+    padding-left: 20px;
+    font-size: 11px;
+    color: #385898;
+}
+
+footer ol li a {
+    text-decoration: none;
+    color: #385898;
+}
+
+footer ol li a:hover {
+    text-decoration: underline;
+}
+
+footer small {
+    font-size: 11px;
+    padding-left: 20px;
 }

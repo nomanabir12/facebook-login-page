@@ -16,23 +16,20 @@ main {
     margin: 0 auto;
 }
 
-footer {
-    height: 130vh;
-    background-color: #ffffff;
-}
+
 .row {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     align-items: center;
-    max-width: 100px;
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    transform: (-50%, -50%);
+    width: 76%;
+    max-width: 1000px;
+    transform: translate(14%, 26%);
+
 }
+
 .col-logo {
-    display: flex;
-    flex-direction: column;
+    flex: 0 0 50%;
+    text-align: left;
 }
 .col-form {
     flex: 0 0 40%;
@@ -43,25 +40,26 @@ footer {
 .col-logo img {
     max-width: 400px;
     margin-top: 30px;
+    padding-left: -1px;
 
 }
 .col-logo h2 {
-    font: 20px;
-    font-weight: 300;
+    font: 26px;
+    font-weight: 400;
     padding: 20px 24px;
     line-height: 26px;
     font-weight: bold;
-    margin-bottom: 100%;
+    margin-bottom: 100%
 }
 
 .col-form .form-container {
     background-color: #ffffff;
-    width: 400px;
+    width: 500px;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-    margin-top: -150px;
-    margin-bottom: -5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 10 30px 60px rgba(0, 0, 0, 0.1);
+    margin-top: -338px;
+    margin-bottom: -10px;
     padding: 2%;   
 }
 .col-form .form-container input, .col-form .form-container .btn-login {
@@ -73,10 +71,12 @@ footer {
 
 }
 .col-form .form-container input {
-    border: 1 px solid #010e20;
+    border: 1px solid #010e20;
     color: #1d2129;
     padding: 0 8px;
     outline: none;
+    border-radius: 6px;
+    
 }
 .col-form .form-container input:focus {
     border-color: #1877f2;
@@ -127,6 +127,13 @@ footer {
 
 .col-form p a:hover {
     text-decoration: underline;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    background-color: #ffffff;
+    
 }
 
 .footer-contents {
